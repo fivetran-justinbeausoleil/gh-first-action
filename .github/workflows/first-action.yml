@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch # keywork for github
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # reserved name for where job will run (github actions runners)
+    steps:
+      - name: Print greeting # identify the step
+        run: echo "Hello world!" # command to be executed
+      - name: Print goodbye
+        run: echo "Done"
